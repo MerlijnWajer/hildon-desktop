@@ -27,6 +27,13 @@ override_dh_auto_configure:
 override_dh_installinit:
 	dh_installinit --no-start
 
+override_dh_install:
+	dh_install
+	mkdir -p debian/hildon-desktop/etc/X11/Xsession.post
+	cp -f debian/hildon-desktop.xsession debian/hildon-desktop/etc/X11/Xsession.post/20hildon-desktop
+	cp -f debian/hildon-desktop-wait debian/hildon-desktop/etc/X11/Xsession.post/21hildon-desktop-wait
+	chmod 755 debian/hildon-desktop/etc/X11/Xsession.post/*
+
 binary-install/hildon-desktop::
 	dh_maemolauncher
 	cp src/hildon-desktop-keys.schemas debian/hildon-desktop/usr/share/gconf/schemas/
