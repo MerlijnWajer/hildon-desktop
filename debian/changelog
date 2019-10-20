@@ -1,3 +1,9 @@
+hildon-desktop (2:2.2.162) unstable; urgency=medium
+
+  * Use proper epoch
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 20 Oct 2019 04:11:55 +0200
+
 hildon-desktop (1:2.2.162) unstable; urgency=medium
 
   * Other minor fixes
