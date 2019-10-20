@@ -1,3 +1,9 @@
+hildon-desktop (1:2.2.162) unstable; urgency=medium
+
+  * Other minor fixes
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 20 Oct 2019 03:11:55 +0200
+
 hildon-desktop (1:2.2.161) unstable; urgency=medium
 
   * Fixup init script
